@@ -24,7 +24,9 @@ CREATE TABLE Type_produit (
 create table Client
 (
     idClient SERIAL PRIMARY KEY,
-    nomClient varchar(100)
+    nomClient varchar(100),
+    email varchar(100),
+    mot_de_passe varchar(100)
 );
 
 CREATE TABLE AchatClient 
