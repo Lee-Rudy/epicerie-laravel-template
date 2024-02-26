@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,15 @@ Route::get('/signUp', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/pageTest', function () {
+    return view('pageTest');
+});
+
+
+//methode pour form action controller
+Route::post('/register', [RegisterController::class, 'register']);
+
 
 /*============================================= */
 
