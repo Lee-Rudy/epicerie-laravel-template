@@ -1,0 +1,125 @@
+/* body{
+    background-color: rgb(22, 22, 34);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+.titre
+{
+    background-color: none;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 450px;
+}
+
+.nav-card
+{
+    background-color: none;
+    width: 98%;
+    height: 650px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 500px;
+    right: -1%;
+    display: flex;
+}
+
+.nav-card .filtre
+{
+    background-color: black;
+    width: 250px;
+    height: 650px;
+    border-radius: 3%;
+}
+
+.nav-card .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 324px);
+    gap:15px;
+    margin-left: 20px;
+}
+
+.nav-card .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    background-color: rgb(22, 22, 34);
+    padding:30px 20px;
+    border: 2px solid #a446bb;
+}
+
+
+.nav-card .box-container .box img{
+    height: 155px;
+    border-radius: 10px;
+}
+
+.nav-card .box-container .box h3{
+    color:#ffffff;
+    font-size: 22px;
+    padding:5px 2px;
+}
+
+.nav-card .box-container .box h5{
+    color:rgb(240, 146, 70);
+    font-size: 15px;
+    padding:5px 5px;
+    float: right;
+    margin-top: -35px;
+}
+
+.nav-card .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: -10px;
+}
+
+.nav-card .box-container .box .btn{
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid antiquewhite;
+    color: antiquewhite;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.nav-card .box-container .box .btn:hover{
+    background-color: rgb(240, 146, 70);
+    border-color: rgb(240, 146, 70);
+    color: #333;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-card .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+.number {
+    width: 70px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    outline: none;
+    color: antiquewhite;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    font-size: 14px;
+    float: right;
+    margin-top: 25px;
+}
+
+.number:focus {
+    width: 100px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    color: antiquewhite;
+    font-size: 14px;
+    
+}

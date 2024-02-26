@@ -1,0 +1,178 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:500'); */
+
+
+/*menu de navigation*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(22, 22, 34);
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    transition: scroll-behavior 2s ease-in-out;
+}
+
+body, html 
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.trait
+{
+    position: absolute;
+    top: 90px;
+    left: -2%;
+    width: 100%;
+    border: none;
+    padding: 0px 100px;/*pour raccourcir  ny halavan'ilay marge le trait*/
+}
+
+.trait hr 
+{
+    border: none;
+    border-top: 1px solid #4a1d55;
+}
+
+li, a, button
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 12.5px;
+    color: azure;
+    text-decoration: none;
+}
+
+header
+{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    /* justify-content: flex-start; */
+    align-items: center;
+    padding: 28px 40px;
+    color: azure;
+    margin-top: 2px;
+}
+
+header .logo
+{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: azure;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 65%;
+}
+
+/*design @ navigations*/
+
+header .menu
+{
+    list-style-type: none;
+}
+
+.menu li
+{
+    display: inline-block;
+    padding: 18px 15px;
+}
+
+.menu li a
+{
+    transition: all 0.3s ease 0s;
+    
+}
+
+.menu li a:hover
+{
+    transition: all 0.3s ease 0s;
+    color: rgb(240, 146, 70);
+}
+
+header .auth button
+{
+    padding: 9px 25px;
+    background-color:rgb(107, 44, 167);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+header .auth button:hover
+{
+    background-color:rgb(240, 146, 70);
+    transition: all 0.3s ease 0s;
+}
+
+/* fin menu de navigation*/
+/*=====================================================================*/
+
+/* texte des paragraphes */
+/*paragraphe 1*/
+.paragraphe1 
+{
+    position: absolute;
+    top: 40%;
+    left: 4%;
+}
+
+.paragraphe1 h2
+{
+    font-size: 35px;
+}
+
+.paragraphe1 span
+{
+    font-size: 16px;
+}
+
+.btn-paragraphe1 {
+    background-color: transparent;
+    border: 1px solid antiquewhite;
+    color: antiquewhite;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-paragraphe1:hover {
+    background-color: rgb(240, 146, 70);
+    border-color: rgb(240, 146, 70);
+    color: #333;
+    transition: all 0.3s ease 0s;
+}
+
+/*paragraphe 2*/
+.paragraphe2
+{
+    background-color: rgba(116, 102, 194, 0.165);
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    border-radius: 20px;
+}
+
+.paragraphe2 h2
+{
+    color: rgba(255, 137, 58, 0.897);
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: rotate(-90deg);
+    background-color: transparent;
+}
