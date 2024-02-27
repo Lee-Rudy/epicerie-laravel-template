@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Hash;
 
 class RegisterModel extends Model
 {
@@ -13,14 +14,15 @@ class RegisterModel extends Model
     //php artisan make::model RegisterModel
     //php artisan make::controller RegisterController
 
-    protected $table = 'Client';//nom de la table
+    protected $table = 'client';//nom de la table
 
     public static function insertClient($nomClient, $email, $motDePasse)
     {
         return self::insert([
-            'nomClient' => $nomClient,
+            'nomclient' => $nomClient,
             'email' => $email,
-            'mot_de_passe' => bcrypt($motDePasse),
+            'mot_de_passe' => $motDePasse,
+            // 'mot_de_passe' => Hash::make($motDePasse), // Hacher le mot de passe avant de l'insérer
         ]);
     }
 }

@@ -14,7 +14,7 @@
                 <h3>Sign Up</h3>
 
                 <label for="nom">nom</label>
-                <input type="text" placeholder="Email" id="nom" name="nomClient" required>
+                <input type="text" placeholder="nom" id="nom" name="nomClient" required>
 
                 <label for="email">e-mail</label>
                 <input type="text" placeholder="Email" id="email" name="email" required>
@@ -26,7 +26,7 @@
 
 
                 <label for="dtn">date ne naissance</label>
-                <input type="date" placeholder="" id="dtn" name="dtn" required>
+                <input type="date" placeholder="" id="dtn" name="dtn">
 
                 <input type="submit" class="btn-login" value="S'inscrire">
                 <a href="{{url('/')}}">revenir à l'acceuil</a>

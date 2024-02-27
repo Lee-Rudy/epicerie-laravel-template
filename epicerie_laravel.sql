@@ -1,6 +1,7 @@
 --database name : epicerie_laravel
 --type : postgres
-
+--techno : laravel : laravel est bizzare sensible à la casse comme 
+-- nomClient dans la base mais dans le model c'est nomclient
 CREATE TABLE Produit (
     idProduit SERIAL PRIMARY KEY,
     nom VARCHAR(50) NOT NULL,

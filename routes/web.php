@@ -37,6 +37,7 @@ Route::get('/pageTest', function () {
 Route::post('/register', [RegisterController::class, 'register']);
 
 
+
 /*============================================= */
 
 /*route url admin */
