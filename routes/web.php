@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,9 +34,15 @@ Route::get('/pageTest', function () {
     return view('pageTest');
 });
 
+Route::get('/pageLogin', function () {
+    return view('pageLogin');
+});
+
 
 //methode pour form action controller
 Route::post('/register', [RegisterController::class, 'register']);
+Route::post('/loginController', [LoginController::class, 'login']);
+
 
 
 

@@ -14,6 +14,9 @@ class RegisterModel extends Model
     //php artisan make::model RegisterModel
     //php artisan make::controller RegisterController
 
+    //techno : laravel : laravel est bizzare sensible à la casse par exemple comme 
+    //nomClient dans la base mais dans le model c'est nomclient
+
     protected $table = 'client';//nom de la table
 
     public static function insertClient($nomClient, $email, $motDePasse)

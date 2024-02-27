@@ -7,7 +7,8 @@
     <title>login</title>
 </head>
 <body>
-    <form action="#" method="post">
+    <form action="/loginController" method="post">
+      @csrf
         <div class="container">
             <div class="champ_saisie">
                 <h3>Login</h3>
@@ -16,7 +17,7 @@
                 <input type="text" placeholder="Email" id="email" name="email" required>
 
                 <label for="mdp">mot de passe</label>
-                <input type="password" placeholder="mot de passe" id="mdp" name="mdp" required>
+                <input type="password" placeholder="mot de passe" id="mdp" name="motDePasse" required>
                 <input type="checkbox" onclick="voir_mot_de_passe()"><span></span>démasquer le mot de passe
                 <br><br>
 
